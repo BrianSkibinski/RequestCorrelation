@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace RequestRequest.Net.Tests
+namespace RequestCorrelation.Net.Tests
 {
 	[TestClass, ExcludeFromCodeCoverage]
 	public class ClientTests

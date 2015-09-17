@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Net;
 
-namespace RequestRequest.Net
+namespace RequestCorrelation.Net
 {
 	public static class Client
 	{

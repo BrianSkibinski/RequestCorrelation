@@ -1,4 +1,4 @@
-namespace RequestRequest.Net
+namespace RequestCorrelation.Net
 {
 	public static class HttpHeaderKeys
 	{

@@ -1,7 +1,7 @@
 using System.Collections.Specialized;
 using System.Web;
 
-namespace RequestRequest.Net.Tests
+namespace RequestCorrelation.Net.Tests
 {
 	public class HeadersRequest : HttpRequestBase
 	{

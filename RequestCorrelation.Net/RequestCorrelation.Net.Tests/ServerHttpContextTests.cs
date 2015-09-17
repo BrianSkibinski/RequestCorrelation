@@ -3,11 +3,10 @@ using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Web;
-using System.Web.Fakes;
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace RequestRequest.Net.Tests
+namespace RequestCorrelation.Net.Tests
 {
 	[TestClass, ExcludeFromCodeCoverage]
 	public class ServerHttpContextTests

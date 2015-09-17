@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Web;
 
-namespace RequestRequest.Net
+namespace RequestCorrelation.Net
 {
 	public static class Server
 	{
