@@ -7,7 +7,7 @@
     <ProjectGuid>{D39605DF-270A-4AC3-8993-A85D37429FE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RequestCorrelation.Net.RestSharp</RootNamespace>
+    <RootNamespace>RequestCorrelation.RestSharp</RootNamespace>
     <AssemblyName>RequestCorrelation.Net.RestSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -1,7 +1,7 @@
 ﻿using System;
 using RestSharp;
 
-namespace RequestCorrelation.Net.RestSharp
+namespace RequestCorrelation.RestSharp
 {
     public static class RequestExtensions
     {

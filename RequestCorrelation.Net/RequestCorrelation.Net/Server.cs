@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web;
 
-namespace RequestCorrelation.Net
+namespace RequestCorrelation
 {
 	public static class Server
 	{

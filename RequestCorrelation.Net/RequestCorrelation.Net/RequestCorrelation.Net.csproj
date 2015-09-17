@@ -7,7 +7,7 @@
     <ProjectGuid>{82D36046-F747-4D56-A856-3126368B6878}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RequestCorrelation.Net</RootNamespace>
+    <RootNamespace>RequestCorrelation</RootNamespace>
     <AssemblyName>RequestCorrelation.Net</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

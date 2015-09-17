@@ -6,7 +6,7 @@
     <ProjectGuid>{00131770-7408-45C1-9B2D-E191ED5FBD71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RequestCorrelation.Net.Tests</RootNamespace>
+    <RootNamespace>RequestCorrelation.Tests</RootNamespace>
     <AssemblyName>RequestCorrelation.Net.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

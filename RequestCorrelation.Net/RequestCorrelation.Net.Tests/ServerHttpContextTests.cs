@@ -7,7 +7,7 @@ using System.Web.Fakes;
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace RequestCorrelation.Net.Tests
+namespace RequestCorrelation.Tests
 {
 	[TestClass, ExcludeFromCodeCoverage]
 	public class ServerHttpContextTests
