@@ -14,7 +14,4 @@
     <copyright>Copyright 2015</copyright>
     <tags>x-request-id correlation request-id requestid header RestSharp</tags>
   </metadata>
-  <dependencies>
-    <dependency id="RestSharp" version="105.2.3" />
-  </dependencies>
 </package>
