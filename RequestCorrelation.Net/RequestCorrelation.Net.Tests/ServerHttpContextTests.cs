@@ -3,6 +3,7 @@ using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Web;
+using System.Web.Fakes;
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -139,7 +140,7 @@ namespace RequestCorrelation.Net.Tests
 			{
 				ShimHttpRequest.AllInstances.HeadersGet = httpRequest =>
 				{
-					var collection = new NameValueCollection { { HttpHeaderKeys.HttpRequestRequestHeader, header } };
+					var collection = new NameValueCollection { { HttpHeaderKeys.HttpRequestIdHeader, header } };
 					return collection;
 				};
 			}

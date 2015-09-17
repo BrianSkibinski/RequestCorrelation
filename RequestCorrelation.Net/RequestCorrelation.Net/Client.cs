@@ -17,14 +17,14 @@ namespace RequestCorrelation.Net
 		public static void AddRequestId(this WebRequest request, Guid requestId, bool overwriteIfExists = true)
 		{
 			if (request == null) throw new ArgumentNullException("request", "The request cannot be null");
-			if (request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestRequestHeader))
+			if (request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestIdHeader))
 			{
-				if (overwriteIfExists == false && request.Headers[HttpHeaderKeys.HttpRequestRequestHeader] != requestId.ToString("N"))
+				if (overwriteIfExists == false && request.Headers[HttpHeaderKeys.HttpRequestIdHeader] != requestId.ToString("N"))
 					throw new ArgumentException("Request already contains a header for request id (request id).  To overwrite, call this method with overwriteIfExists = true");
 
-				request.Headers[HttpHeaderKeys.HttpRequestRequestHeader] = requestId.ToString("N");
+				request.Headers[HttpHeaderKeys.HttpRequestIdHeader] = requestId.ToString("N");
 			}
-			else request.Headers.Add(HttpHeaderKeys.HttpRequestRequestHeader, requestId.ToString("N"));
+			else request.Headers.Add(HttpHeaderKeys.HttpRequestIdHeader, requestId.ToString("N"));
 		}
 	}
 }

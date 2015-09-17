@@ -16,9 +16,9 @@ namespace RequestCorrelation.Net
 		{
 			requestId = Guid.Empty;
 			if (request == null) return false;
-			if (!request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestRequestHeader)) return false;
+			if (!request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestIdHeader)) return false;
 
-			return Guid.TryParse(request.Headers[HttpHeaderKeys.HttpRequestRequestHeader], out requestId);
+			return Guid.TryParse(request.Headers[HttpHeaderKeys.HttpRequestIdHeader], out requestId);
 		}
 
 		/// <summary>
@@ -67,9 +67,9 @@ namespace RequestCorrelation.Net
 		{
 			requestId = Guid.Empty;
 			if (request == null) return false;
-			if (!request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestRequestHeader)) return false;
+			if (!request.Headers.AllKeys.Contains(HttpHeaderKeys.HttpRequestIdHeader)) return false;
 
-			return Guid.TryParse(request.Headers[HttpHeaderKeys.HttpRequestRequestHeader], out requestId);
+			return Guid.TryParse(request.Headers[HttpHeaderKeys.HttpRequestIdHeader], out requestId);
 		}
 
 		/// <summary>
