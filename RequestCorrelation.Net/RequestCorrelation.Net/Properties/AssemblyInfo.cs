@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RequestCorrelation.Net")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Library of extension methods for adding/receiving the x-request-id header to correlate server and client requests with backend logging and subsequent calls.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RequestCorrelation.Net")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2015 Brian Skibinski")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
