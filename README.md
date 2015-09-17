@@ -11,6 +11,8 @@ OR
 PM> Install-Package RequestCorrelation.Net.RestSharp
 
 # Usage:
+All of the GetRequestId methods will return the header if present and a Guid, otherwise will return a new randomly generated Guid using Guid.NewGuid.  Any x-request-id header that can be parsed by Guid.TryParse will be returned.  If you need to know if the header was there, use the TryGetRequestId methods.
+
 ## Adding the RequestId to a WebRequest
 ```C#
 var request = WebRequest.Create("http://localhost/");
