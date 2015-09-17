@@ -6,11 +6,12 @@ Currently we only have two libraries, one for regular .net and one that extends 
 
 #Install
 Get it from nuget:
-PM> Install-Package RequestCorrelation.Net
+
+[PM> Install-Package RequestCorrelation.Net](https://www.nuget.org/packages/RequestCorrelation.Net/)
 
 OR
 
-PM> Install-Package RequestCorrelation.Net.RestSharp
+[PM> Install-Package RequestCorrelation.Net.RestSharp](https://www.nuget.org/packages/RequestCorrelation.Net.RestSharp/)
 
 # Usage:
 All of the GetRequestId methods will return the header if present and a Guid, otherwise will return a new randomly generated Guid using Guid.NewGuid.  Any x-request-id header that can be parsed by Guid.TryParse will be returned.  If you need to know if the header was there, use the TryGetRequestId methods.
@@ -27,7 +28,7 @@ var request = new RestRequest("http://localhost");
 request.AddRequestId(Guid.NewGuid());
 ```
 
-## Getting the RequestId on the Server
+## Getting the RequestId or a new Guid on the Server
 ```C#
 Guid id = HttpContext.Current.GetRequestId()
 ```
@@ -39,18 +40,17 @@ if (HttpContext.Current.TryGetRequestId())
 {
 //use it
 } else { 
-	//do something else
+//do something else
 }
 ```
 
-## Getting the RequestId on the Server
+## Getting the RequestId on the Server in MVC (works the same was in WebApi)
 ```C#
-Guid id = Guid.Empty;
-if (Request.TryGetRequestId()) //Request assumes you're in a Controller/ApiController
+[HttpGet]
+public virtual ActionResult Index()
 {
-	//use it
-} else { 
-	//do something else
+	var requestId = Request.GetRequestId();
+	...
 }
 ```
 
