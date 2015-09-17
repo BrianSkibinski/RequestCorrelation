@@ -2,6 +2,8 @@
 
 RequestCorrelation is a grouping of projects that will allow adding and receiving a request correlation header in x-request-id.  It is useful for tracing/logging across services so that you can correlate requests to responses in a multi-service environment (microservices/soa).
 
+Currently we only have two libraries, one for regular .net and one that extends RestSharp.  They don't depend on each other so you can use either/both.
+
 #Install
 Get it from nuget:
 PM> Install-Package RequestCorrelation.Net
