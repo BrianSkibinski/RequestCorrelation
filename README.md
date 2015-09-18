@@ -36,7 +36,7 @@ Guid id = HttpContext.Current.GetRequestId()
 ## Getting the RequestId on the Server
 ```C#
 Guid id = Guid.Empty;
-if (HttpContext.Current.TryGetRequestId())
+if (HttpContext.Current.TryGetRequestId(out id))
 {
 //use it
 } else { 
