@@ -44,7 +44,7 @@ if (HttpContext.Current.TryGetRequestId(out id))
 }
 ```
 
-## Getting the RequestId on the Server in MVC (works the same was in WebApi)
+## Getting the RequestId on the Server in MVC (works the same way in WebApi)
 ```C#
 [HttpGet]
 public virtual ActionResult Index()
