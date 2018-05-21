@@ -23,8 +23,8 @@ namespace RequestCorrelation
 					throw new ArgumentException("Request already contains a header for request id (request id).  To overwrite, call this method with overwriteIfExists = true");
 
 				request.Headers[HttpHeaderKeys.HttpRequestIdHeader] = requestId.ToString("N");
-			}
-			else request.Headers.Add(HttpHeaderKeys.HttpRequestIdHeader, requestId.ToString("N"));
+			}			
+			else request.Headers[HttpHeaderKeys.HttpRequestIdHeader] = requestId.ToString("N");
 		}
 	}
 }
