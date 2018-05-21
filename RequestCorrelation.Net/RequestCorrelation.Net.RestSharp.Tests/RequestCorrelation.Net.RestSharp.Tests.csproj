@@ -18,10 +18,4 @@
     <ProjectReference Include="..\RequestCorrelation.Net.RestSharp\RequestCorrelation.Net.RestSharp.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="RestSharp">
-      <HintPath>..\..\..\..\Users\jasonc\.nuget\packages\restsharp\106.2.2\lib\netstandard2.0\RestSharp.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
