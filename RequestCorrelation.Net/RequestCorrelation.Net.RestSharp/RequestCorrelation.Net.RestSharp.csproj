@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<Version>2.0.0</Version>
 		<Description>Library of extension methods for adding/receiving the x-request-id header to RestSharp's RestRequest.</Description>
 		<Company>Brian Skibinski</Company>
